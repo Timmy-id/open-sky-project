@@ -1,14 +1,22 @@
 import styled from 'styled-components';
 
-export const MContainer = styled.div`
+export const Container = styled.div`
   margin-top: 20%;
   font-family: sans-serif;
   font-weight: bold;
   color: #fff;
+  ${
+    '' /* @media screen and (max-width: 768px) {
+    margin-top: 20rem;
+  } */
+  }
 `;
 
 export const Text = styled.p`
   font-size: 35px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 export const Button = styled.a`
@@ -26,5 +34,8 @@ export const Button = styled.a`
   color: #fff;
   &:hover {
     background-color: #788097;
+  }
+  @media (max-width: 768px) {
+    font-size: 14px;
   }
 `;
