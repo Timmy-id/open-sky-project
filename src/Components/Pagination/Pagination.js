@@ -122,7 +122,7 @@ const Pagination = ({ flightData }) => {
             >
               &#62;&#62;
             </button>
-            <button onClick={handleLoadMore}>Load More</button>
+            <button disabled onClick={handleLoadMore}>Load More</button>
           </li>
         </ul>
       </div>

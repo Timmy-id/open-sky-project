@@ -22,6 +22,7 @@ const Login = () => {
             value={username}
             placeholder='Enter Username'
             onChange={(e) => setUsername(e.target.value)}
+            required
           />
         </Box>
         <Box>
@@ -30,6 +31,7 @@ const Login = () => {
             value={password}
             placeholder='Enter Password'
             onChange={(e) => setPassword(e.target.value)}
+            required
           />
         </Box>
         <Button type='submit'>LOGIN</Button>

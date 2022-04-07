@@ -1,15 +1,16 @@
-import './FlightData.css'
+import './FlightData.css';
+import unix_conv from '../../services/formatDate';
 
 const FlightData = (data) => {
   return (
     <div className='wrapper'>
       <div className='table'>
         <div className='row header'>
-          <div className='cell'>Departure Airport</div>
-          <div className='cell'>Arrival Airport</div>
+          <div className='cell'>Dep Airport</div>
+          <div className='cell'>Arr Airport</div>
           <div className='cell'>Time</div>
-          <div className='cell'>Arrival Count</div>
-          <div className='cell'>Departure Count</div>
+          <div className='cell'>Arr Candidates Count</div>
+          <div className='cell'>Dep Candidates Count</div>
         </div>
 
         {data.map((info, index) => {
@@ -22,7 +23,7 @@ const FlightData = (data) => {
                 {info.estArrivalAirport || '-'}
               </div>
               <div className='cell' data-title='Time'>
-                {info.lastSeen}
+                {unix_conv(info.lastSeen)}
               </div>
               <div className='cell' data-title='Arrival Count'>
                 {info.arrivalAirportCandidatesCount}
