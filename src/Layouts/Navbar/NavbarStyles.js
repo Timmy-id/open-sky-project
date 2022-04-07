@@ -7,6 +7,7 @@ export const Container = styled.div`
   width: 100%;
   color: #fff;
   padding: 20px;
+  text-align: center;
 `;
 
 export const Link = styled.a`

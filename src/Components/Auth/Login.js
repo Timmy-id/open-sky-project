@@ -9,8 +9,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const user = { username };
-    localStorage.setItem('Auth', JSON.stringify(user));
+    localStorage.setItem('Username', username);
     navigate('/dashboard');
   };
 
