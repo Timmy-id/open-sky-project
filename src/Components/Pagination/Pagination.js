@@ -8,7 +8,7 @@ const Pagination = ({ flightData }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [dataPerPage, setDataPerPage] = useState(10);
 
-  const [pageNumberLimit, setPageNumberLimit] = useState(10);
+  const [pageNumberLimit] = useState(10);
   const [maxPageNumberLimit, setMaxPageNumberLimit] = useState(10);
   const [minPageNumberLimit, setMinPageNumberLimit] = useState(0);
 
@@ -89,6 +89,10 @@ const Pagination = ({ flightData }) => {
     pageDecrementBtn = <li onClick={handlePrevBtn}> &hellip;</li>;
   }
 
+  const handleLoadMore = () => {
+    setDataPerPage(dataPerPage + 5);
+  };
+
   return isLoading ? (
     <h1 style={{ fontSize: '30px', color: 'white' }}>Loading...</h1>
   ) : (
@@ -118,6 +122,7 @@ const Pagination = ({ flightData }) => {
             >
               &#62;&#62;
             </button>
+            <button onClick={handleLoadMore}>Load More</button>
           </li>
         </ul>
       </div>
