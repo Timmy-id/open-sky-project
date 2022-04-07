@@ -1,4 +1,4 @@
-﻿# My Project
+﻿# My OpenSky API Project
 * This app is created with react and redux-toolkit. 
 * It uses the [OpenSky API](https://openskynetwork.github.io/opensky-api/rest.html#flights-all).
 * The live site can be found [here](https://movie-app-redux-toolkit.netlify.app/)
