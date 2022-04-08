@@ -28,7 +28,7 @@ const Pagination = ({ flightData }) => {
 
   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
 
-  console.log('currentItems:', currentItems);
+  // console.log('currentItems:', currentItems);
 
   const renderPageNumbers = pages.map((number) => {
     if (
