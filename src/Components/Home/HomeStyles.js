@@ -5,10 +5,9 @@ export const Container = styled.div`
   font-family: sans-serif;
   font-weight: bold;
   color: #fff;
-  ${
-    '' /* @media screen and (max-width: 768px) {
+
+  @media (max-width: 768px) {
     margin-top: 20rem;
-  } */
   }
 `;
 
@@ -16,6 +15,9 @@ export const Text = styled.p`
   font-size: 35px;
   @media (max-width: 768px) {
     font-size: 20px;
+  }
+  @media (max-width: 375px) {
+    font-size: 16px;
   }
 `;
 

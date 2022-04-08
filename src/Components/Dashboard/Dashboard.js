@@ -3,7 +3,7 @@ import FlightData from '../FlightData/FlightData';
 import Pagination from '../Pagination/Pagination';
 
 const Dashboard = () => {
-  const user = localStorage.getItem('Username');
+  const user = localStorage.getItem('user');
 
   return (
     <div>
@@ -12,7 +12,7 @@ const Dashboard = () => {
           color: 'white',
           fontWeight: 'bold',
           fontSize: '20px',
-          marginTop:'80px'
+          marginTop: '80px',
         }}
       >
         Welcome {user}

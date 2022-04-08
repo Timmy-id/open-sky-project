@@ -7,7 +7,7 @@ export const Container = styled.div`
   width: 100%;
   color: #fff;
   padding: 20px;
-  text-align: center;
+  }
 `;
 
 export const Link = styled.a`
@@ -16,4 +16,11 @@ export const Link = styled.a`
   cursor: pointer;
   color: #fff;
   text-decoration: none;
+  @media (max-width: 768px) {
+    text-align: center;
+    font-size: 25px;
+  }
+  @media (max-width: 375px) {
+    font-size: 16px;
+  }
 `;

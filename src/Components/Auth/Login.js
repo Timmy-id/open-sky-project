@@ -7,9 +7,8 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    localStorage.setItem('Username', username);
+  const handleSubmit = () => {
+    localStorage.setItem('user', username);
     navigate('/dashboard');
   };
 
