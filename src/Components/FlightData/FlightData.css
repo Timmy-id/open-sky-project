@@ -11,12 +11,6 @@
     display: table;
 }
 
-@media screen and (max-width: 580px) {
-    .table {
-        display: block;
-    }
-}
-
 .row {
     display: table-row;
     background: #f6f6f6;
@@ -32,7 +26,16 @@
     background: #ea6153;
 }
 
+.cell {
+    padding: 6px 12px;
+    display: table-cell;
+}
+
 @media screen and (max-width: 580px) {
+    .table {
+        display: block;
+    }
+
     .row {
         padding: 14px 0 7px;
         display: block;
@@ -54,7 +57,7 @@
     .row .cell:before {
         margin-bottom: 3px;
         content: attr(data-title);
-        min-width: 98px;
+        /* min-width: 98px; */
         font-size: 10px;
         line-height: 10px;
         font-weight: bold;
@@ -62,14 +65,7 @@
         color: #969696;
         display: block;
     }
-}
 
-.cell {
-    padding: 6px 12px;
-    display: table-cell;
-}
-
-@media screen and (max-width: 580px) {
     .cell {
         padding: 2px 16px;
         display: block;

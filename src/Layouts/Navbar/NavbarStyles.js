@@ -24,3 +24,21 @@ export const Link = styled.a`
     font-size: 16px;
   }
 `;
+
+export const Button = styled.a`
+  display: block;
+  width: 6rem;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+  background-color: '#977880';
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  &:hover {
+    background-color: #788097;
+  }
+`;
